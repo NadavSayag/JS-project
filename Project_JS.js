@@ -1,18 +1,18 @@
 `use strict`
 
-// function changeCL() {
-//    const body = document.body;
-//    const currentBgColor = body.style.backgroundColor;
+function changeCL() {
+   const body = document.body;
+   const currentBgColor = body.style.backgroundColor;
 
-//    if (currentBgColor === 'white')
-//       body.style.backgroundColor = 'green';
+   if (currentBgColor === 'white')
+      body.style.backgroundColor = 'green';
 
-//    else {
-//       body.style.backgroundColor = 'white';
-//    }
-// }
-// const bt = document.getElementById('miri');
-// bt.addEventListener('click', changeCL);
+   else {
+      body.style.backgroundColor = 'white';
+   }
+}
+const bt = document.getElementById('miri');
+bt.addEventListener('click', changeCL);
 
 
 
