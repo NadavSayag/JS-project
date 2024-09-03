@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="ProjectStyle.css">
+    <!-- Ensures the webpage is properly scaled on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook</title>
+</head>
+
+<body>
+    <!-- Main title of the page -->
+    <h1>Phone Book</h1>
+
+    <!-- Search bar input for filtering contacts -->
+    <input type="text" id="search" placeholder="Search">
+
+    <!-- Button to open the 'Add New Contact' popup -->
+    <button class="buttonAdd" onclick="OpenPopup()">
+        <img id="add" src="icons/add-user.png" alt="Add Contact">
+    </button>
+
+    <!-- Button to delete all contacts -->
+    <button class="buttonDeleteAll" onclick="deleteAll()">
+        <img id="deleteAll" src="icons/trash.png" alt="Delete All Contacts">
+    </button>
+
+    <!-- Container for the contact list -->
+    <container class="TableContainer">
+    </container>
+
+    <!-- Popup for adding a new contact -->
+    <div class="popup" id="popupAdd">
+        <!-- Button to close the 'Add New Contact' popup -->
+        <button class="closeBtn" onclick="closePopup()">&CircleTimes;</button>
+        <!-- Title bar for the popup -->
+        <div class="titleBar">Add New Contact</div>
+        <!-- Input fields for the new contact's details -->
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="phone" placeholder="Phone">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="address" placeholder="Address">
+        <!-- Button to add the new contact -->
+        <button class="buttonPopup" onclick="add()">Add</button>
+    </div>
+
+    <!-- Popup for editing an existing contact -->
+    <div class="popup" id="popupEdit">
+        <!-- Button to close the 'Edit Contact' popup -->
+        <button class="closeBtn" onclick="closePopupEdit()">&CircleTimes;</button>
+        <!-- Title bar for the popup -->
+        <div class="titleBar">Edit Contact</div>
+        <!-- Input fields to edit the contact's details -->
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="phone" placeholder="Phone">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="address" placeholder="Address">
+        <!-- Button to save the edited contact -->
+        <button class="buttonPopup" onclick="OnClickEdit()">Change</button>
+    </div>
+
+    <!-- Popup for displaying contact information -->
+    <div class="popup" id="popupInfo">
+    </div>
+
+    <!-- Button to toggle dark mode -->
+    <button class="darkMode" onclick="darkMode()">
+        <img class="nightMode" src="icons/nightMode.png" alt="Dark Mode">
+    </button>
+
+    <button id="miri">Press here to change the color :)</button>
+
+    
+    <!-- Footer of the webpage -->
+    <footer>&copy; 2024 Phone Book All Rights Reserved<br>Created By: Michael Sidoruk, Nadav Sayag</footer>
+
+
+
+    <!-- Link to the external JavaScript file -->
+    <script defer src="Project_JS.js"></script>
+</body>
+
+</html>
