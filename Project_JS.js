@@ -1,23 +1,5 @@
 `use strict`
 
-function changeCL() {
-   const body = document.body;
-   const currentBgColor = body.style.backgroundColor;
-
-   if (currentBgColor === 'white')
-      body.style.backgroundColor = 'green';
-
-   else {
-      body.style.backgroundColor = 'white';
-   }
-}
-const bt = document.getElementById('miri');
-bt.addEventListener('click', changeCL);
-
-
-
-
-
 document.getElementById("search").addEventListener("input", search);
 
 // Define an array of user objects, each containing name, phone, email, and address.
